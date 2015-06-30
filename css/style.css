@@ -8,8 +8,8 @@ body {
     padding-top: 65px; 
 
 }
-#navbar-right.selected {
-    background-color:blue;
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #FFC0CB;
 }
 .footer {
   position: absolute;
