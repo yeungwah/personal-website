@@ -74,17 +74,17 @@
                     <form id ="contactForm" method="post" action = "./email.php">
                         <div class="form-group">
                             <label for="inputName">Name</label>
-                            <input type="name" class="form-control" id="inputName"
+                            <input name = "name" type="text" class="form-control" id="inputName"
                                    placeholder="Name">
                             <?php echo "<p class='text-danger'>$errName</p>";?>
                         </div>
                         <div class="form-group">
                             <label for="inputEmail">Email address</label>
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                            <input name = "email" type="text" class="form-control" id="inputEmail" placeholder="Email">
                         </div>
                         <div class="form-group">
                             <label for="inputMessage">Message</label>
-                            <textarea class="form-control" id="inputMessage" rows="5"></textarea>
+                            <textarea name = "message" class="form-control" id="inputMessage" rows="5"></textarea>
                         </div>
                     </form>
                 </div>
