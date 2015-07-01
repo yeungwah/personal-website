@@ -71,10 +71,12 @@
                     <h4 class="modal-title" id="myModalLabel">Contact me</h4>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form role = "form" method="post" action = "email.php">
                         <div class="form-group">
                             <label for="inputName">Name</label>
-                            <input type="name" class="form-control" id="inputName" placeholder="Name">
+                            <input type="name" class="form-control" id="inputName"
+                                   placeholder="Name">
+                            <?php echo "<p class='text-danger'>$errName</p>";?>
                         </div>
                         <div class="form-group">
                             <label for="inputEmail">Email address</label>
@@ -88,7 +90,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <input type="submit" class="btn btn-primary" value = "Send"></input>
                 </div>
             </div>
         </div>
